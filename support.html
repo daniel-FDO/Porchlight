@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ask for support</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="support-body">
+
+  <header class="support-crisisbar">
+   <p>In immediate crisis? Call 0800 000 000</p>
+  </header>
+
+   <nav class="support-nav">
+    <a class="support-logo" href="index.html">Porchlight</a>
+
+    <ul class="support-navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find_help.html">Find Help</a></li>
+        <li><a href="guides.html">Guides</a></li>
+      <li><a href="support.html" class="active">Get Support</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <a class="support-cta" href="give_help.html">Give Help</a>
+  </nav>
+   <!-- <nav class="navbar">
+  <a href="index.html" class="logo">Porchlight</a>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="find_help.html">Find Help</a></li>
+    <li><a href="support.html">Get Support</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="give_help.html" class="give-help-btn">Give Help</a></li>
+  </ul>
+</nav> -->
+
+  <header class="support-hero">
+    <div class="support-hero-inner">
+      <h1>Ask for support</h1>
+      <p>You don’t need to give your name. You don’t need to explain everything. Just reach out, a real person will respond.</p>
+    </div>
+  </header>
+
+  <main class="support-wrap">
+
+    <!-- Tabs -->
+    <div class="support-tabs">
+      <button class="support-tab active" data-tab="housing">HOUSING &amp; HOMELESSNESS</button>
+      <button class="support-tab" data-tab="mental">MENTAL HEALTH</button>
+    </div>
+
+    <!-- Two-column layout -->
+    <section class="support-grid">
+
+      <!-- LEFT: Form -->
+      <div class="support-panel">
+        <h2>Tell us what’s going on</h2>
+
+        <label class="support-label" for="topicSelect">What do you need help with?</label>
+        <div class="support-selectwrap">
+          <select id="topicSelect" class="support-select">
+            <option value="">Select an option…</option>
+            <option>Finding somewhere to sleep tonight</option>
+            <option>Benefits / Universal Credit</option>
+            <option>No ID / documents</option>
+            <option>Food bank / essentials</option>
+            <option>Talking to someone</option>
+            <option>Other</option>
+          </select>
+          <span class="support-select-icon">▾</span>
+        </div>
+
+        <label class="support-label" for="moreText">Tell us more</label>
+        <textarea id="moreText" class="support-textarea" placeholder="You can write as much or as little as you like"></textarea>
+
+        <div class="support-anon">
+          <div class="support-anon-top">
+            <button class="support-toggle" id="anonToggle" aria-pressed="true">
+              <span class="knob"></span>
+            </button>
+
+            <div>
+              <div class="support-anon-title">Staying anonymous</div>
+              <div class="support-anon-sub">
+                Your question won’t be linked to any name. Add an email below only if you’d like a reply.
+              </div>
+            </div>
+          </div>
+
+          <input id="emailInput" class="support-input" type="email" placeholder="you@example.com" disabled />
+        </div>
+
+        <button class="support-send" id="sendBtn">
+          Send my question →
+        </button>
+
+        <div class="support-smallnote" id="sendNote"></div>
+      </div>
+
+      <!-- RIGHT: FAQ -->
+      <div class="support-panel support-panel-right">
+        <h2>Common questions answered</h2>
+
+        <div class="support-faq" data-tabcontent="housing">
+          <button class="faq-item open">
+            <span>I have no ID, can I still get into a shelter?</span>
+            <span class="arrow">→</span>
+          </button>
+          <div class="faq-answer show">
+            Yes. Most shelters in Kent will accept you without ID. Some may ask for a name but it is not always required.
+            Porchlight’s Direct Access service specifically helps people with no documents.
+          </div>
+
+          <button class="faq-item">
+            <span>How do I get emergency accommodation tonight?</span>
+            <span class="arrow">→</span>
+          </button>
+          <div class="faq-answer">
+            Start with local council homelessness services, emergency helplines, or nearby shelters. If it’s unsafe, call emergency services.
+          </div>
+
+          <button class="faq-item">
+            <span>Can I access benefits without a fixed address?</span>
+            <span class="arrow">→</span>
+          </button>
+          <div class="faq-answer">
+            Often yes. You can use a care-of address, a support service address, or discuss options with a support worker.
+          </div>
+
+          <button class="faq-item">
+            <span>What should I do if a shelter is full?</span>
+            <span class="arrow">→</span>
+          </button>
+          <div class="faq-answer">
+            Ask for referrals, check nearby towns, and contact support services for alternatives like night shelters, hostels, or emergency placements.
+          </div>
+        </div>
+
+        <div class="support-faq hidden" data-tabcontent="mental">
+          <button class="faq-item open">
+            <span>I feel overwhelmed, what can I do right now?</span>
+            <span class="arrow">→</span>
+          </button>
+          <div class="faq-answer show">
+            Try grounding: breathe in 4 seconds, hold 4, out 6. If you feel unsafe, call a trusted person or a helpline. You’re not alone.
+          </div>
+
+          <button class="faq-item">
+            <span>Can I talk to someone without giving my name?</span>
+            <span class="arrow">→</span>
+          </button>
+          <div class="faq-answer">
+            Yes. You can stay anonymous. Only share what you’re comfortable with.
+          </div>
+
+          <button class="faq-item">
+            <span>How do I ask for help if I struggle to explain?</span>
+            <span class="arrow">→</span>
+          </button>
+          <div class="faq-answer">
+            Keep it simple: “I’m not okay and I need support.” A support worker can ask gentle questions to guide you.
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="support-footer">
+    <div class="support-footer-inner">
+      <div class="footer-brand">
+        <div class="support-logo footer-logo">Porchlight</div>
+        <p>
+          A companion hub to Porchlight’s main website, built to give faster access to practical help for people experiencing homelessness or mental health challenges in Kent.
+        </p>
+      </div>
+
+      <div class='contact-footer-links'>
+        <div>
+          <h4>GET HELP</h4>
+          <a href='find_help.html'>Find a shelter</a>
+          <a href='find_help.html'>Food banks</a>
+          <a href='support.html'>Mental health</a>
+          <a href='support.html'>Ask a question</a>
+        </div>
+        <div>
+          <h4>GIVE HELP</h4>
+          <a href='give_help.html'>Donate</a>
+          <a href='give_help.html'>Volunteer</a>
+          <a href='https://www.porchlight.org.uk/get-involved/events' target='_blank'>Fundraising events</a>
+          <a href='https://www.porchlight.org.uk' target='_blank'>Main Porchlight site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="support.js"></script>
+</body>
+</html>

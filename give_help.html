@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Give Help</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background-animation">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <header class="top-bar">
+    <p>In immediate crisis? Call 0800 000 000</p>
+  </header>
+
+  <nav class="support-nav">
+    <a class="support-logo" href="index.html">Porchlight</a>
+
+    <ul class="support-navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="find_help.html">Find Help</a></li>
+      <li><a href="guides.html">Guides</a></li>
+      <li><a href="support.html">Get Support</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section class="give-wrap">
+    <p class="give-kicker">• PORCHLIGHT SUPPORT HUB</p>
+
+    <div class="give-hero">
+      <h1>Make a difference today</h1>
+
+      <div class="give-stats">
+        <div class="give-stat">
+          <div class="give-num">805</div>
+          <div class="give-sub">People helped<br>last year</div>
+        </div>
+
+        <div class="give-stat">
+          <div class="give-num">£2.15 mil</div>
+          <div class="give-sub">Raised by you in<br>2025</div>
+        </div>
+
+        <div class="give-stat">
+          <div class="give-num">100+</div>
+          <div class="give-sub">Active<br>volunteers</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="give-card">
+
+      <div class="give-tabs">
+        <button class="give-tab active" data-mode="donate" type="button">Donate</button>
+        <button class="give-tab" data-mode="volunteer" type="button">Volunteer</button>
+      </div>
+
+      <div class="give-amounts">
+        <button class="amt" type="button">£5</button>
+        <button class="amt active" type="button">£10</button>
+        <button class="amt" type="button">£25</button>
+        <button class="amt" type="button">£50</button>
+        <button class="amt" type="button">Other</button>
+      </div>
+
+      <div class="custom-amount-box" id="customAmountBox">
+        <label for="customAmount">Enter your amount (£)</label>
+        <input type="number" id="customAmount" min="1" placeholder="e.g. 15">
+      </div>
+
+      <div class="give-message" id="giveMessage">
+        £10 provides a hot meal and shelter for one person for one night
+      </div>
+
+      <div class="give-frequency">
+        <button class="freq active" type="button">Monthly</button>
+        <button class="freq" type="button">One-off</button>
+      </div>
+
+      <button class="give-submit" type="button">Donate Now</button>
+
+      <div class="give-wishlist">
+        <h3>PHYSICAL WISHLIST - BUY ITEMS WE NEED</h3>
+
+        <div class="wish-grid">
+          <button class="wish" type="button" onclick="buyItem('sleeping bag')">🛌 Sleeping bag</button>
+          <button class="wish" type="button" onclick="buyItem('hygiene kit')">🧴 Hygiene kit</button>
+          <button class="wish" type="button" onclick="buyItem('winter coat')">🧥 Winter coat</button>
+          <button class="wish" type="button" onclick="buyItem('tinned food')">🥫 Tinned food</button>
+          <button class="wish" type="button" onclick="buyItem('warm socks')">🧦 Warm socks</button>
+          <button class="wish" type="button" onclick="buyItem('waterproof jacket')">☔ Waterproof jacket</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Porchlight Support Finder</p>
+  </footer>
+
+  <script src="give_help.js"></script>
+
+  <footer class="contact-footer">
+    <div class="contact-footer-inner">
+      <div class="contact-footer-brand">
+        <div class="footer-logo-text">Porchlight</div>
+        <p>
+          A companion hub to Porchlight's main website, built to give faster
+          access to practical help for people experiencing homelessness or
+          mental health challenges in Kent.
+        </p>
+      </div>
+
+      <div class='contact-footer-links'>
+        <div>
+          <h4>GET HELP</h4>
+          <a href='find_help.html'>Find a shelter</a>
+          <a href='find_help.html'>Food banks</a>
+          <a href='support.html'>Mental health</a>
+          <a href='support.html'>Ask a question</a>
+        </div>
+        <div>
+          <h4>GIVE HELP</h4>
+          <a href='give_help.html'>Donate</a>
+          <a href='give_help.html'>Volunteer</a>
+          <a href='https://www.porchlight.org.uk/get-involved/events' target='_blank'>Fundraising events</a>
+          <a href='https://www.porchlight.org.uk' target='_blank'>Main Porchlight site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

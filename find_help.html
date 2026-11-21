@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Find Help</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background-animation">
+<span></span><span></span><span></span><span></span>
+</div>
+<header class="top-bar">
+<p>In immediate crisis? Call 0800 000 000</p>
+</header>
+  <nav class="support-nav">
+    <a class="support-logo" href="index.html">Porchlight</a>
+
+    <ul class="support-navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="find_help.html">Find Help</a></li>
+        <li><a href="guides.html">Guides</a></li>
+      <li><a href="support.html" class="active">Get Support</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <a class="support-cta" href="give_help.html">Give Help</a>
+  </nav>
+<section class="find-help-page">
+<div class="find-help-layout">
+<!-- LEFT PANEL -->
+<div class="find-left-panel">
+<div class="find-search-area">
+<h1>Find help near you</h1>
+<div class="find-search-box">
+<input type="text" id="helpLocationInput" placeholder="📍 Enter your postcode or town">
+<button id="helpSearchBtn" type="button">GO</button>
+</div>
+</div>
+<div class="find-filters">
+<div class="top-filters">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="open">Open now</button>
+</div>
+<div class="category-filters">
+<button class="chip chip-shelter" data-category="Shelter">🏠 Shelter</button>
+<button class="chip chip-food" data-category="Food Bank">🍲 Food Bank</button>
+<button class="chip chip-shower" data-category="Shower">🚿 Shower</button>
+<button class="chip chip-mental" data-category="Mental Health">🧠 Mental Health</button>
+</div>
+</div>
+<div id="helpResults" class="find-results"></div>
+</div>
+<!-- RIGHT PANEL -->
+<div class="find-map-panel">
+<div id="map"></div>
+</div>
+</div>
+</section>
+<footer class="contact-footer">
+<div class="contact-footer-inner">
+<div class="contact-footer-brand">
+<div class="footer-logo-text">Porchlight</div>
+<p>
+         A companion hub to Porchlight’s main website, built to give faster
+         access to practical help for people experiencing homelessness or
+         mental health challenges in Kent.
+</p>
+</div>
+<div class='contact-footer-links'>
+        <div>
+          <h4>GET HELP</h4>
+          <a href='find_help.html'>Find a shelter</a>
+          <a href='find_help.html'>Food banks</a>
+          <a href='support.html'>Mental health</a>
+          <a href='support.html'>Ask a question</a>
+        </div>
+        <div>
+          <h4>GIVE HELP</h4>
+          <a href='give_help.html'>Donate</a>
+          <a href='give_help.html'>Volunteer</a>
+          <a href='https://www.porchlight.org.uk/get-involved/events' target='_blank'>Fundraising events</a>
+          <a href='https://www.porchlight.org.uk' target='_blank'>Main Porchlight site</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="find_help.js"></script>
+</body>
+</html>
+
